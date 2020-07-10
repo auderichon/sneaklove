@@ -17,7 +17,7 @@ const SneakerSchema = new Schema({
     enum: ["men", "women", "kids"],
   },
   id_tags: {
-    type: Schema.Types.ObjectId,
+    type: [Schema.Types.ObjectId],
     ref: "tag",
   },
 });
